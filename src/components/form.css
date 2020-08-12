@@ -1,0 +1,23 @@
+input, button{
+    padding:2em;
+    border:none;
+  }
+  input{
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    width:45vw;
+    max-width:500px;
+  }
+  button{
+    background-color:#869EA0;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    color:white;
+  }
+
+  input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
