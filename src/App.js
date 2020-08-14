@@ -18,7 +18,7 @@ class App extends Component {
   getWeather = async e =>{
     e.preventDefault();
 
-    let part1 = "http://api.openweathermap.org/data/2.5/weather?q="
+    let part1 = "https://api.openweathermap.org/data/2.5/weather?q="
     // let part1 = "http://api.openweathermap.org/data/2.5/forecast/hourly?q=&appid="
     let input = this.state.input
     console.log(input);
