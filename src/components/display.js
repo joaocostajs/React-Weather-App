@@ -16,6 +16,7 @@ class Form extends Component {
             <p>{name}, {sys.country}</p>
             <h2>{weather[0].description}</h2> 
             <p>{month}, {d.getDay()} {d.getFullYear()}</p>
+             <p>{cod}</p>
            <h1>{main.temp}º</h1>
            <button className="btn" onClick={this.props.success}>search again</button>
         </div>
