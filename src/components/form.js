@@ -28,10 +28,18 @@ class Form extends Component {
 // } 
   render() {
     return (
+      <div>
         <form onSubmit={this.props.fetch}>
-         <input type="text" name="input" placeholder="Type here" onChange={this.props.update}/>
+         <input type="text" name="input" placeholder="Type here the name of your city, ex. London, UK" onChange={this.props.update}/>
          <button type="submit">search</button>
+        
+         
+       
     </form>
+      {this.props.error === true ? <div className="error">
+      You need to put other adress
+    </div> : null}
+    </div>
     );
   }
 }
