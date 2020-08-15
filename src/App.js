@@ -23,7 +23,7 @@ class App extends Component {
     let input = this.state.input
     console.log(input);
     let key = process.env.REACT_APP_API_KEY
-    let part2 = "&lang=pt&units=metric"
+    let part2 = "&units=metric"
     let url = part1 + input + key + part2
     if(input !== ""){
       let fetching = await fetch(url)
@@ -53,7 +53,7 @@ class App extends Component {
       <div className="App">
        
       <header className="App-header">
-        {this.state.success ? <Display data={this.state.data} success={this.changeState}/>  :  <Form error={this.state.error} fetch={this.getWeather} update={this.handleChange}/> }
+      {this.state.success ? <Display data={this.state.data} success={this.changeState}/>  :  <Form error={this.state.error} fetch={this.getWeather} update={this.handleChange}/> }
       </header>
     </div>
     );
