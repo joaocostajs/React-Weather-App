@@ -15,6 +15,7 @@
 
 .App-header {
   background: url('https://images.pexels.com/photos/2835562/pexels-photo-2835562.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260  ');
+  /* background: url('https://images.pexels.com/photos/2437299/pexels-photo-2437299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); */
   background-position: center;
   background-size:cover;
   min-height: 100vh;
