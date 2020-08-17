@@ -13,9 +13,9 @@ class Form extends Component {
        return (
          <div>
           <div className="display">
-            {console.log(this.props.data)}
+            {console.log(d.getDate())}
             <div className="todays">
-            <p>{month}, {d.getDay()} {d.getFullYear()}</p>
+            <p>{month}, {d.getDate()} {d.getFullYear()}</p>
               <h2>{weather[0].description.charAt(0).toUpperCase() + weather[0].description.slice(1)}</h2> 
               <p>{name}, {sys.country}</p>
             <h1>{main.temp}º</h1>
